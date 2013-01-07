@@ -1,0 +1,44 @@
+
+
+div.right-side{
+  float: left;
+}
+a.tile{
+	width: 250px;
+	height: 125px;
+	display: inline;
+	background-color:#00879d 
+}
+a.tile img{
+	 float:left;
+	 margin-top:2px;
+	 margin-left:5px;
+	 height:"50";
+	 width:"50";
+}
+a.tile div.livetile{
+	margin-left: 65px;
+	opacity: 1;
+	margin-top: 0px;
+}
+ul.tile_item{
+	list-style: none;	
+}
+ul.tile_item li{
+	list-style: none;
+	height: 125px;
+	padding-bottom: 10px;
+}
+
+.portfolio-banner{
+  float: left;
+  width: 410px;
+  margin-right: 10px;  
+}
+.portfolio-banner ul{
+    margin-top: 0px;
+    padding-left: 0px;
+}
+.portfolio-banner ul li{
+  list-style: none;
+}

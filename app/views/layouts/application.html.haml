@@ -1,0 +1,39 @@
+!!!
+%html
+	%head
+		%title AleatexMetro
+		= stylesheet_link_tag "application", :media=> "all"
+		= stylesheet_link_tag "main", :media=> "all"
+		= stylesheet_link_tag "nav", :media=> "all"
+		= stylesheet_link_tag "tiles", :media=> "all"
+		= stylesheet_link_tag "theme", :media=> "all"
+		= stylesheet_link_tag "theme_mobile", :media=> "all"
+		= stylesheet_link_tag "your", :media=> "all"
+
+		
+		= javascript_include_tag "application"
+		= csrf_meta_tags
+	%body	
+	#headerWrapper
+		#header
+			#headerTitles
+				%h1
+					= link_to "AleaTex", home_url 
+				%h2 AleaTex is great!
+			#nav{style:"float: right;"}
+				= link_to home_url, id: "home", class: "navItem navActive" do
+					= image_tag("icons/home.png")
+					%br
+					HOME
+				= link_to library_url, id:"navLibrary", class: "navItem" do
+					= image_tag "icons/library_logo.png"
+					%br
+					Library
+		/= link_to incubator_url, id:"navIncubator", class:"navItem" do
+		/= image_tag "/icons/questionmark.png"
+		/= link_to  software_url, id:"navSoftware", class:"navItem" do
+		/= image_tag "/icons/software.png"
+	#wrapper
+		#contentWrapper{:style=>"display: block; min-width: 555px; height: 625px;"}
+			#content{:style=>"margin-left: 0px;"}
+				=yield

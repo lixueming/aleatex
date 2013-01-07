@@ -1,0 +1,22 @@
+.portfolio-banner
+	%ul
+		%li
+			= image_tag "portfolio/banner.png"
+
+.right-side
+	%ul.tile_item
+		%li
+			= link_to library_url, class:"tile library" do
+				= image_tag "icons/library_logo.png", class:"library_icon"
+				.tileTitle{style:"margin-left:60px;"}Library
+				.livetile AleaTex
+		%li		
+			= link_to "/incubator", class:"tile incubator" do
+				= image_tag "icons/incubator_logo.png", class:"library_icon"
+				.tileTitle{style:"margin-left:60px;"}Library
+				.livetile AleaTex
+		%li
+			= link_to "/soft", class:"tile soft" do
+				= image_tag "icons/soft_logo.png", class:"library_icon"
+				.tileTitle{style:"margin-left:60px;"}Library
+				.livetile AleaTex
